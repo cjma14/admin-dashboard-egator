@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Google Fonts Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+
+            <!-- top sidebar -->
+            <div class="sidebar__header">
+                <div class="sidebar__logo">
+                    <img class="sidebar__image" src="./images/logo.png" alt="logo_admin">
+                    <h2 class="sidebar__title">EG <span class="text--danger">ATOR</span></h2>
+                </div>
+
+                <div class="sidebar__close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            
+            <!-- content sidebar -->
+            <div class="sidebar__content">
+
+                <a class="sidebar__item sidebar__item--active" href="#">
+                    <span class="material-icons-sharp sidebar__item-icon">grid_view</span>
+                    <h3 class="sidebar__item-text">Dashboard</h3>
+                </a>
+                
+                <a class="sidebar__item" href="#">
+                    <span class="material-icons-sharp sidebar__item-icon">person_outline</span>
+                    <h3 class="sidebar__item-text">Customers</h3>
+                </a>
+
+                <a class="sidebar__item" href="#">
+                    <span class="material-icons-sharp sidebar__item-icon">receipt_long</span>
+                    <h3 class="sidebar__item-text">Orders</h3>
+                </a>
+
+                <a class="sidebar__item" href="#">
+                    <span class="material-icons-sharp sidebar__item-icon">insights</span>
+                    <h3 class="sidebar__item-text">Analytics</h3>
+                </a>
+
+                <a class="sidebar__item" href="#">
+                    <span class="material-icons-sharp sidebar__item-icon">mail_outline</span>
+                    <h3 class="sidebar__item-text">Messages</h3>
+                    <span class="message-count">26</span>
+                </a>
+
+                <a class="sidebar__item" href="#">
+                    <span class="material-icons-sharp sidebar__item-icon">inventory</span>
+                    <h3 class="sidebar__item-text">Products</h3>
+                </a>
+
+                <a class="sidebar__item" href="#">
+                    <span class="material-icons-sharp sidebar__item-icon">report_gmailerrorred</span>
+                    <h3 class="sidebar__item-text">Reports</h3>
+                </a>
+
+                <a class="sidebar__item" href="#">
+                    <span class="material-icons-sharp sidebar__item-icon">settings</span>
+                    <h3 class="sidebar__item-text">Settings</h3>
+                </a>
+
+                <a class="sidebar__item" href="#">
+                    <span class="material-icons-sharp sidebar__item-icon">add</span>
+                    <h3 class="sidebar__item-text">Add Product</h3>
+                </a>
+
+                <a class="sidebar__item" href="#">
+                    <span class="material-icons-sharp sidebar__item-icon">logout</span>
+                    <h3 class="sidebar__item-text">Logout</h3>
+                </a>
+
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
