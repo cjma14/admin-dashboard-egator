@@ -39,7 +39,7 @@
             <div class="sidebar__content">
 
                 <a class="sidebar__item sidebar__item--active" href="#">
-                    <span class="material-icons-sharp sidebar__item-icon">grid_view</span>
+                    <span class="material-icons-sharp sidebar__item-icon sidebar__item-icon--active">grid_view</span>
                     <h3 class="sidebar__item-text">Dashboard</h3>
                 </a>
                 
@@ -61,7 +61,7 @@
                 <a class="sidebar__item" href="#">
                     <span class="material-icons-sharp sidebar__item-icon">mail_outline</span>
                     <h3 class="sidebar__item-text">Messages</h3>
-                    <span class="message-count">26</span>
+                    <span class="sidebar__message-count">26</span>
                 </a>
 
                 <a class="sidebar__item" href="#">
@@ -91,6 +91,111 @@
 
             </div>
         </aside>
+        <!-- END OF SIDEBAR -->
+        
+        <main>
+
+            <div class="dashboard">
+                <h1>Dashboard</h1>
+                
+                <div class="dashboard__date">
+                    <input class="dashboard__input-date"type="date" name="" id="">
+                </div>
+
+                <!-- Insights -->
+                <div class="dashboard__insights">
+
+                    <!-- CARD OF SALES -->
+                    <div class="card">
+                        <span class="material-icons-sharp card__icon card__icon--danger">analytics</span>
+                        <div class="card__middle">
+
+                            <div class="card__left">
+                                <h3 class="card__label">Total Sales</h3>
+                                <h2 class="card__title">$25,024</h2>
+                            </div>
+
+                            <div class="card__right">
+                                <div class="progress">
+                                    <svg class="progress_svg">
+                                        <circle class="progress_circle progress_circle--sales" cx="38" cy="38" r="36"></circle>
+                                    </svg>
+                                    <div class="progress__number">
+                                        <p>81%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <small class="card__text-small">Last 24 Hours</small>
+                    </div>
+
+                    <!-- CARD OF  EXPENSES-->
+                    <div class="card">
+                        <span class="material-icons-sharp card__icon card__icon--success">bar_chart</span>
+                        <div class="card__middle">
+
+                            <div class="card__left">
+                                <h3 class="card__label">Total Expenses</h3>
+                                <h2 class="card__title">$14,160</h2>
+                            </div>
+
+                            <div class="card__right">
+                                <div class="progress">
+                                    <svg class="progress_svg">
+                                        <circle class="progress_circle progress_circle--expenses" cx="38" cy="38" r="36"></circle>
+                                    </svg>
+                                    <div class="progress__number">
+                                        <p>62%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <small class="card__text-small">Last 24 Hours</small>
+                    </div>
+
+                    <!-- CARD OF INCOME -->
+                    <div class="card">
+                        <span class="material-icons-sharp card__icon">stacked_line_chart</span>
+                        <div class="card__middle">
+
+                            <div class="card__left">
+                                <h3 class="card__label">Total Income</h3>
+                                <h2 class="card__title">$10,864</h2>
+                            </div>
+
+                            <div class="card__right">
+                                <div class="progress">
+                                    <svg class="progress_svg">
+                                        <circle class="progress_circle progress_circle--income" cx="38" cy="38" r="36"></circle>
+                                    </svg>
+                                    <div class="progress__number">
+                                        <p>44%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <small class="card__text-small">Last 24 Hours</small>
+                    </div>
+
+                </div>
+
+                <!-- Recent Orders -->
+
+                <div class="recent-order">
+                    <h2 class="recent-order__title">Recent Orders</h2>
+                    <table>
+                        
+                    </table>
+                </div>
+            </div>
+            
+        </main>
     </div>
 </body>
 </html>
