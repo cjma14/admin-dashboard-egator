@@ -117,19 +117,19 @@ b {
 }
 
 .text--primary {
-    color: var(--color-primary)
+    color: var(--color-primary) !important;
 }
 
 .text--danger {
-    color: var(--color-danger)
+    color: var(--color-danger) !important;
 }
 
 .text--success {
-    color: var(--color-success)
+    color: var(--color-success) !important;
 }
 
 .text--warning {
-    color: var(--color-warning)
+    color: var(--color-warning) !important;
 }
 
 .text--muted {
@@ -148,7 +148,6 @@ b {
     align-items: center;
     justify-content: space-between;
     margin-top: 1.4rem;
-    background-color: white;
 }
 
 .sidebar__logo  {
@@ -419,10 +418,198 @@ b {
     display: flex;
     justify-content: end;
     gap: 2rem;
-    background: gray;
+}
+
+.menu-button {
+    display: none;
+}
+
+.theme-toggler {
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.theme-toggler__button {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggler__button--active {
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
 }
 
 .profile__photo {
     border-radius: 100%;
     width: 3rem;
+}
+
+.profile {
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+/* ========== RECENT UPDATES ==========*/
+
+.recent-updates {
+    margin-top: 1rem;
+}
+
+.recent-updates__title{
+    margin-bottom: 0.8rem;
+}
+
+.recent-updates__container {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.recent-updates__container:hover {
+    box-shadow: none;
+}
+
+.recent-updates__update {
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+/* ====== SALES ANALYTICS ========*/
+
+.sales-analytics {
+    margin-top: 2rem;
+}
+
+.sales-analytics__title {
+    margin-bottom: 0.8rem ;
+}
+
+.sales-analytics__item {
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.sales-analytics__item:hover {
+    box-shadow: none;
+}
+
+.sales-analytics__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+
+.sales-analytics__icon {
+    padding: 0.6rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+}
+
+.sales-analytics__icon--offline {
+    background: var(--color-danger);
+}
+
+
+.sales-analytics__icon--customers {
+    background: var(--color-success);
+}
+
+.sales-analytics__item--add-product {
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sales-analytics__item--add-product:hover {
+    color: var(--color-white);
+    background: var(--color-primary);
+}
+
+.sales-analytics__content--add-product {
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+
+.sales-analytics__title-product {
+    font-weight: 600;
+}
+
+/* ======= MEDIAS QUERIES ========*/
+
+@media screen and (max-width: 1200px) {
+
+    .container {
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    .sidebar__title {
+        display: none;
+    }
+
+    .sidebar__item-text {
+       display: none;
+    }
+
+    .sidebar__item {
+        width: 5.6rem;
+    }
+
+    .sidebar__item:last-child {
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    .dashboard__insights {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .recent-order {
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem;
+    }
+
+    .recent-order__table {
+        width: 83vw;
+    }
+
+
 }
